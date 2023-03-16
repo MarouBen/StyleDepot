@@ -34,14 +34,6 @@
     height: 100%;
     text-align: center;
 }
-.body input{
-    background-color: #eee;
-    border-radius: 10px;
-    border: none;
-    margin-top: 20px;
-    width: 100%;
-    padding: 12px 15px;
-}
 
 .form-container{
     position: absolute;
@@ -94,7 +86,7 @@
     transform: translate(-100%);
 }
 .overlay{
-    background: linear-gradient(to bottom, #8A2BE2, #4B0082);
+    background-image: url("pic.png");
     background-size:cover ;
     background-position: 0 0;
     color: #FFF;
@@ -164,15 +156,15 @@
 
 
 
-/* buttons */
+/* -----------------------------------------buttons------------------------------------------- */
 .slide_btn {
     display: inline-block;
-    border-radius: 4px;
-    background-color: #316886;
-    border: none;
+    border-radius: 6px;
+    background-color: #00223d;
+    border: 1px solid #0a3d5c;
     color: #FFFFFF;
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
     padding: 10px;
     width: 130px;
     transition: all 0.5s;
@@ -244,4 +236,7 @@
     transform: translate(0);
     box-shadow: none;
   }
+
+
+/* -----------------------------------------Inputs------------------------------------------- */
 
