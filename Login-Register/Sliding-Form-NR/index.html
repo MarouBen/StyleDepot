@@ -4,80 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <!-- Font awesome for icons -->
     <script src="https://kit.fontawesome.com/d61c00eed6.js" crossorigin="anonymous"></script>
     <title>Sliding form</title>
 </head>
 <body>
-    <div class="container">
+    <div class ="body">
+        <div class="container" id="container">
 
-        <!-- Register -->
-        <div class="form-container register-container">
-            <form>
-                <h1>Register here</h1>
-                <input type="text" placeholder="Username">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
-                <button>Register</button>
-                <!-- Optionnal -->
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <!-- Optionnal -->
-            </form>
-        </div>
-        <!-- Register -->
-
-        <!-- Login -->
-        <div class="form-container login-container">
-            <form>
-                <h1>Login here</h1>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <!-- Optionnal -->
-                <div class="content">
-                    <div class="checkbox">
-                        <input type="checkbox" id="remember-me">
-                        <label for="remember-me">Remember me</label>
+            <!-- Register -->
+            <div class="form-container register-container">
+                <form class="Sliding_form">
+                    <h1 class="title1">Register here</h1>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button>Register</button>
+                    <!-- Optionnal -->
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <div class="forgot-password">
-                        <a href="#">Forgot your password?</a>
-                    </div>  
-                </div>
-                <!-- Optionnal -->
-                <button>Login</button>
-                <!-- Optionnal -->
-                <span>or use your account</span>
-                <div class="social-container">
-                    <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
-                    <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <!-- Optionnal -->
-            </form>
-        </div>
-        <!-- Login -->
+                    <!-- Optionnal -->
+                </form>
+            </div>
+            <!-- Register -->
 
-        <!-- Overlay -->
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>Welcome back!</h1>
-                    <p>To keep connected with us please login with your personal info</p>
-                    <button class="ghost" id="login">Login</button>
-                </div>
-                <div class="overlay-panel overlay-right">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <button class="ghost" id="signUp">Register</button>
+            <!-- Login -->
+            <div class="form-container login-container">
+                <form class="Sliding_form">
+                    <h1 class="title1">Login here</h1>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <!-- Optionnal -->
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember-me">
+                            <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="forgot-password">
+                            <a href="#">Forgot your password?</a>
+                        </div>  
+                    </div>
+                    <!-- Optionnal -->
+                    <button>Login</button>
+                    <!-- Optionnal -->
+                    <span>or use your account</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- Optionnal -->
+                </form>
+            </div>
+            <!-- Login -->
+
+            <!-- Overlay -->
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="title2">Welcome back!</h1>
+                        <p class="under_title">To keep connected with us please login with your personal info</p>
+                        <button class="ghost" id="login">Login</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title2">Hello, Friend!</h1>
+                        <p class="under_title">Enter your personal details and start journey with us</p>
+                        <button class="ghost" id="register">Register</button>
+                    </div>
                 </div>
             </div>
+            <!-- Overlay -->
         </div>
-        <!-- Overlay -->
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
