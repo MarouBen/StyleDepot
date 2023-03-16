@@ -165,4 +165,83 @@
 
 
 /* buttons */
+.slide_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #316886;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.slide_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.R_btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+.L_btn span:before{
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -15px;
+    transition: 0.5s;
+}
+
+.R_btn:hover span {
+    padding-right: 15px;
+}
+.L_btn:hover span{
+    padding-left: 15px;
+}
+
+.R_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.L_btn:hover span:before {
+    opacity: 1;
+    left: 0;
+}
+
+
+.main_btn {
+    --bg: #000;
+    --hover-bg: #1b7fb4;
+    --hover-text: #FFF;
+    margin-top: 30px;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 6px;
+    width: 130px;
+    padding: 10px;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+.main_btn:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+.main_btn:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
 
