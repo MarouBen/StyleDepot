@@ -8,11 +8,11 @@ To use StyleDepot, you can browse the repository and download the styling compon
 ## Contributing
 We welcome contributions from other developers to improve StyleDepot. If you want to contribute, please follow these guidelines:
 
-## Fork the repository
-1. Create a new branch
-2. Add your styling component to the repository
-3. Test your component
-4. Submit a pull request
+* Fork the repository
+* Create a new branch
+* Add your styling component to the repository
+* Test your component
+* Submit a pull request
 Please make sure your component is well-documented and follows best practices for web development.
 
 ## License
