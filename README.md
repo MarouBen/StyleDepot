@@ -1,5 +1,5 @@
 # StyleDepot: A Depot of Styling Components
-## Introduction
+### Introduction
 StyleDepot is a Github repository created to store various styling components for web development projects. These components include responsive pages, UI elements, and other styling components that can be reused in different projects.
 
 ## Usage
