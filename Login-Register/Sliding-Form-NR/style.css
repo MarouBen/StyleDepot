@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap");
 
 .body{
-    box-sizing: border-box;
+    display: flex;
     background-color: #f6f5f7;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    overflow: hidden;
     height: 100svh;
     font-family: "Nunito",sans-serif;
 }
@@ -16,18 +15,11 @@
     box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.25), 0 10px 10px rgba(0, 0 , 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 60%!important;
+    width: 60%;
     max-width: 100%;
     min-height: 600px;
 }
-@media (max-width: 1000px) {
-   
-}
-.content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .sliding_form{
     background-color: #fff;
@@ -59,9 +51,7 @@
     width: 50%;
     z-index: 2;
 }
-.container .right-panel-active .login-container{
-    transform: translateX(100%);
-}
+
 .register-container{
     left: 0;
     width: 50%;
@@ -87,6 +77,7 @@
     }
 }
 .overlay-container{
+    
     position: absolute;
     top: 0;
     left: 50%;
@@ -153,9 +144,7 @@
 .container.right-panel-active .overlay-right{
     transform: translateX(20%);
 }
-.social-container{
-    margin: 20px 0;
-}
+
 .social-container a{
     border: 1px solid rgba(255,255,255,0.4);
     border-radius: 50%;
