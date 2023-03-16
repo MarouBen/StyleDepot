@@ -18,8 +18,8 @@
     box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.25), 0 10px 10px rgba(0, 0 , 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 50%;
-    max-width: 100%;
+    width: 95svw;
+    max-width: 900px;
     min-height: 600px;
 }
 
@@ -141,7 +141,7 @@
 }
 
 .social-container a{
-    border: 1px solid rgba(255,255,255,0.4);
+    color: #20c5b7;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
