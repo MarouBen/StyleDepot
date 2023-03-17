@@ -24,7 +24,7 @@
     position: absolute;
     width: 100%;
     inset: 0;
-    background: var(--input-bg-color);
+    background: var(--input-bg-color)!important;
     border-radius: 30px;
     height: 100%;
     z-index: -1;
@@ -72,7 +72,7 @@
     visibility: hidden;
 }
 /* styling of input */
-.input {
+.searchInput {
     color: var(--input-text-color);
     width: 100%;
     margin-inline: min(2em,calc(var(--inline-padding-of-input) + var(--gap)));
@@ -80,32 +80,32 @@
     border: none;
 }
   
-.input:focus {
+.searchInput:focus {
     outline: none;
 }
   
-.input::placeholder {
+.searchInput::placeholder {
     color: var(--text-color)
 }
 /* input background change in focus */
-.input:focus ~ .search-bg {
+.searchInput:focus ~ .search-bg {
     border: 1px solid var(--active-color);
     background: var(--focus-input-bg-color);
 }
 /* search icon color change in focus */
-.input:focus ~ .search {
+.searchInput:focus ~ .search {
     fill: var(--active-color);
 }
 /* showing close button when typing */
-.input:valid ~ .close-search {
+.searchInput:valid ~ .close-search {
     opacity: 1;
     visibility: visible;
 }
 /* this is for the default background in input,when selecting autofill options -- you can remove this code if you do not want to override the browser style.  */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+.searchInput:-webkit-autofill,
+.searchInput:-webkit-autofill:hover,
+.searchInput:-webkit-autofill:focus,
+.searchInput:-webkit-autofill:active {
     -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
     -webkit-transition-delay: 9999s;
 }
