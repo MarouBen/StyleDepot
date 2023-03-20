@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition:0.5;
+    font-family: "Nunito",sans-serif;
+    background-color: #f6f5f7;
+}
+
+.container {
+    position: relative;
+    width: 880px;
+    height: 580px;
+    margin: 20px;
+}
+.overlay{
+    border-radius: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("pic.png");
+    background-size:cover ;
+    background-position: 0 0;
+    box-shadow: 0 14px 28px rgba(0, 0 , 0, 0.25), 0 10px 10px rgba(0, 0 , 0, 0.22);
+}
+.overlay::before{
+    border-radius: 25px;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(46, 94,109,0.3) 40%,
+        rgba(46, 94,109,0)
+    );
+}
+.overlay .box{
+    color: #FFF;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.formBox{
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+    transition:all 0.6s  ease-in-out;
+    overflow: hidden;
+}
+.formBox.active{
+    left: 50%;
+}
+
+.formBox .form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    transition: 0.6s  ease-in-out;
+}
+.formBox .form form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formBox.active .signInForm{
+    left: -100%;
+    transition-delay: 0s;
+}
+.formBox .signInForm{
+    transition-delay: 0.25s;
+}
+.formBox .registerForm{
+    left: 100%;
+    transition-delay: 0s;
+}
+.formBox.active .registerForm{
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+@media(max-width:700px){
+    .container{
+        max-width: 400px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .overlay{
+        top: 0;
+        height: 100%;
+    }
+    .formBox{
+        width: 100%;
+        height: 500px;
+        top: 0;
+        box-shadow: none;
+    }
+    .overlay .box{
+        position: absolute;
+        width: 100%;
+        height: 210px;
+        bottom: 0;
+    }
+    .box.signin{
+        top: 0;
+    }
+    .formBox.active{
+        left: 0;
+        top: 200px;
+    }
+    .title2{
+        margin: 0px!important;
+    }
+}
+/* ---------------------------Extra styling--------------------------------- */
+.form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+.social-container a{
+    color: #20c5b7;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+.under_title{
+    padding: 0 10px 0 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.title1{
+    margin: 20px;
+}
+.title2{
+    margin: 20px;
+    padding: 20px;
+}
+
+/* -----------------------------------------buttons------------------------------------------- */
+.slide_btn {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #00223d;
+    border: 1px solid #0a3d5c;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.slide_btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.R_btn span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+.L_btn span:before{
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -15px;
+    transition: 0.5s;
+}
+
+.R_btn:hover span {
+    padding-right: 15px;
+}
+.L_btn:hover span{
+    padding-left: 15px;
+}
+
+.R_btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.L_btn:hover span:before {
+    opacity: 1;
+    left: 0;
+}
+
+
+.main_btn {
+    --bg: #000;
+    --hover-bg: #1b7fb4;
+    --hover-text: #FFF;
+    margin-top: 10px;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 6px;
+    width: 130px;
+    padding: 10px;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+.main_btn:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+.main_btn:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+
+/* -----------------------------------------Inputs------------------------------------------- */
+
+.textInputWrapper {
+    position: relative;
+    width: 99%;
+    margin: 12px 5px;
+    --accent-color: #31d2c4;
+  }
+  
+.textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+  
+.textInputWrapper:before,
+.textInputWrapper:after {
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    pointer-events: none;
+    bottom: -1px;
+    z-index: 4;
+    width: 100%;
+  }
+  
+.textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+  }
+  
+.textInputWrapper:before {
+    transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+  
+.textInputWrapper:focus-within:before {
+    border-bottom: 1px solid var(--accent-color);
+    transform: scaleX(1);
+  }
+  
+.textInputWrapper:focus-within:after {
+    border-bottom: 2px solid var(--accent-color);
+    transform: scaleX(1);
+  }
+  
+.textInputWrapper:after {
+    content: "";
+    transform: scaleX(0);
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    will-change: transform;
+    border-bottom: 2px solid var(--accent-color);
+    border-bottom-color: var(--accent-color);
+  }
+  
+.LR_input::placeholder {
+    transition: opacity 250ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    opacity: 1;
+    user-select: none;
+    color: rgba(0, 0, 0, 0.582);
+  }
+  
+.textInputWrapper .LR_input {
+    border-radius: 5px 5px 0px 0px;
+    box-shadow: 0px 2px 5px rgb(35 35 35 / 30%);
+    max-height: 36px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: background-color;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+.textInputWrapper .LR_input:focus,
+.textInputWrapper .LR_input:active {
+    outline: none;
+  }
+  
+.textInputWrapper:focus-within .LR_input,
+.textInputWrapper .LR_input:focus,
+.textInputWrapper .LR_input:active {
+    background-color: #fff;
+  }
+  
+.textInputWrapper:focus-within .LR_input::placeholder {
+    opacity: 0;
+  }

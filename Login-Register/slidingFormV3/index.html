@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive sliding form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome for icons -->
+    <script src="https://kit.fontawesome.com/d61c00eed6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="body">
+        <!-- Container -->
+        <div class="container">
+            <!-- Overlay -->
+            <div class="overlay">
+                <div class="signin box">
+                    <h1 class="title2">Welcome back!</h1>
+                    <p class="under_title">To keep connected with us please login with your personal info</p>
+                    <button class="slide_btn L_btn" id="login"><span>Login</span></button>
+                </div>
+                <div class="register box">
+                    <h1 class="title2">Hello, Friend!</h1>
+                    <p class="under_title">Enter your personal details and start journey with us</p>
+                    <button class="slide_btn R_btn" id="register"><span>Register</span></button>
+                </div>
+            </div>
+            <!-- Overlay -->
+            <!-- Forms -->
+            <div class="formBox"> 
+                <!-- Sign In -->
+                <div class="form signInForm">
+                    <form class="sliding_form">
+                        <h1 class="title1">Login here</h1>
+                        <div class="textInputWrapper">
+                            <input class="LR_input" type="text" placeholder="Username">
+                        </div>
+                        <div class="textInputWrapper">
+                            <input class="LR_input" type="password" placeholder="Password">
+                        </div>
+                        <button class="main_btn">Login</button>
+                        <!-- <a href="#" class="forget">Forgot Password</a> -->
+                        <!-- Optionnal -->
+                        <span>or use your account:</span>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <!-- Optionnal -->
+                    </form>
+                </div>
+                <!-- Sign In -->
+                <!-- Register -->
+                <div class="form registerForm">
+                    <form>
+                        <h1 class="title1">Register here</h1>
+                        <div class="textInputWrapper"><input class="LR_input" type="text" placeholder="Username"></div>
+                        <div class="textInputWrapper"><input class="LR_input" type="email" placeholder="Email"></div>
+                        <div class="textInputWrapper"><input class="LR_input" type="password" placeholder="Password"></div>
+                        <div class="textInputWrapper"><input class="LR_input" type="password" placeholder="Confirm Password"></div>
+                        <button class="main_btn">Register</button>
+                        <!-- Optionnal -->
+                        <span>or use your email for registration:</span>
+                        <div class="social-container">
+                            <a href="#" class="social"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social"><i class="fa-brands fa-google"></i></a>
+                            <a href="#" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <!-- Optionnal -->   
+                    </form>
+                </div>
+                <!-- Register -->
+            </div>
+            <!-- Forms -->
+        </div>
+        <!-- Container -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
