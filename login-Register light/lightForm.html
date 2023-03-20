@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>light login register</title>
+    <link rel='stylesheet' href='style.css' />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css">
+  </head>
+  <body>
+<section class="bodySign">
+<div class="sign-contain" id="sign-contain">
+    <div class="form-contain register-contain">
+        <form action="/register" method="POST">
+            <h3>Register Here</h3>
+            <input type="text" placeholder="Name" name="name">
+            <input type="email" placeholder="Email" name="email">
+            <input type="password" placeholder="Password" name="password">
+            <button name="register">Register</button>
+            <div class="social-contain">
+                <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                <a href="#" class="social"><i class="lni lni-google"></i></a>
+                <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-contain login-contain">
+        <form action="/login" method="POST">
+            <h3>Login Here</h3>
+            <input type="email" placeholder="Email" name="emailLogin">
+            <input type="password" placeholder="Password" name="passLogin">
+            <button name="login">Login</button>
+            <div class="social-contain">
+                <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                <a href="#" class="social"><i class="lni lni-google"></i></a>
+                <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+                 
+
+            </div>
+        </form>
+    </div>
+
+    <div class="overlay-contain">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h3 class="title">Hello<br> Shopper</h3>
+                <p>if you have an account, login here and Shop</p>
+                <button class="ghost" id="login">Login
+                    <i class="lni lni-arrow-left login"></i>
+                </button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h3 class="title">Start your<br> journey now</h3>
+                <p>if you don't have an account yet, Join us and enjoy Shopping</p>
+                <button class="ghost" id="register">Register
+                    <i class="lni lni-arrow-right register"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>
+
